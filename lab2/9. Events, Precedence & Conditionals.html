@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+<!--Events-->
+<script>
+function displayDate() {
+  document.getElementById("demo1").innerHTML = Date();
+}
+</script>
+
+<p id="demo1"></p>
+<!--Precedence-->
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerHTML = 100 / 50 * 3;
+</script>
+
+<!--Comparison-->
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo6"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo6").innerHTML = voteable + " to vote.";
+}
+</script>
+<!--if, else-->
+<p id="demo4"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo4").innerHTML = greeting;
+</script>
+<!--Switch-->
+<p id="demo7"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo7").innerHTML = text;
+</script>
+
+</body>
+</html> 
