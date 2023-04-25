@@ -1,0 +1,269 @@
+<html>
+<style>
+body{
+background-image: url(vec.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 98%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <a href="index.html">Home</a>
+  <a href="insert_blog.html">Blog</a>
+  <a href="signup.html">Sign up and comment</a>
+  <a href="aboutme.html">About me</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NAVIGATION</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<div class="main">
+  <p></p>
+</div>
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>A TRIP DOWN TO MEMORY LANE</h1>
+<hr>
+
+<h2>Here are I would say are my memorable moments in my life that I would not forget.</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="pic1.jpg" alt="THVG" style="width:100%">
+      <h3>Thanatos ESGS Team</h3>
+      <p>This was the team that I participated with in the ESGS vainglory tournament. This is the team that was built right from the get go since the original team
+	  didn't come in time to participated in the tournament. We got 2nd place and we almost beat the best team in the country that time. We lost but it was a fun and
+	  memorable experience for me.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="pic3.jpg" alt="THVG" style="width:100%">
+      <h3>Thantos Guild</h3>
+      <p>This is Thanatos, a guild that I joined to compete versus the highest skilled team in the country. I would argue this was the a great team to be apart of. It had
+	  a great manager and a leader. Great people that are also apart of the guild. We had a lot of fun in the ESGS event. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="pic2.jpg" alt="188" style="width:100%">
+      <h3>Code Esports</h3>
+      <p>Code Esports was a team created by us classmates since almost all the boys in our section (STEM 188) was playing competitive games at that time. 
+	  We played a lot of tournaments, we won some and loss some. It was a very fun experience to be with these guys and I hope we get the chance to play again.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content"><br>
+      <img src="pic4.jpg" alt="codm" style="width:100%">
+      <h3>188 Code Esports</h3>
+      <p>This photo was taken when we won the Call of Duty mobile tournament. We won this tournament and it was a very fun day for us. Everyone played their role and we sticked
+	  to the plan hence why it resulted in a championship</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- END MAIN -->
+</div>
+
+<body text="white">
+
+</body>
+</html>

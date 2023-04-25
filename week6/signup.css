@@ -1,0 +1,37 @@
+body{
+  background-image: url(vec.jpg);
+}
+
+div{
+  margin: 2em 5em 3em 5em;
+  padding: 2em 6em 2em 6em;
+  background-color: rgb(68, 68, 68);
+  color: #ffff;
+  border-radius: 1.25rem;
+}
+#container_1{
+  text-align:center;
+}
+#container_2{
+ display: block;
+
+  
+}
+.form{
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#submit{
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgb(68, 68, 68);
+  color: inherit;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+textarea{
+  width: 100%;
+}

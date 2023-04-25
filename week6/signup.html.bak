@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <a href="index.html">Home</a>
+  <a href="insert_blog.html">Blog</a>
+  <a href="signup.html">Sign up and comment</a>
+  <a href="aboutme.html">About me</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NAVIGATION</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<div id="container_1">
+  
+<h1 id="title">
+  Leave us your info
+</h1>
+<p id="description">
+  Enter the required data in the boxes.
+</p>
+  
+</div>
+<div id="container_2">
+<form action="insert.php" method="post">
+<h3 id="first">Fullname : <input type="text" name="Fullname"></h3><br>
+<h3 id="last">Nickname: <input type="text" name="Nickname"></h3><br>
+<h3 id="hobby">Hobbies : <input type="text" name="hobbies"></h3><br>
+<h3 id="bday">Birthday: <input type="text" name="birthday"></h3><br>
+<p>Any suggestions or comments you wanna ask? Just type it here!!!</p>
+      <textarea input type="text"
+        id="comments"
+        name="comments"
+      ></textarea>
+    
+   
+<input type="submit" id="sbmt">
+</form>
+</div>
+</body>
+</html>

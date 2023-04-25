@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+  <meta charset="utf-8">
+  <title>CSS floating elements</title>
+  <style>
+
+body{
+  background-image: url(vec.jpg);
+}
+		
+#pic {
+  float:right;
+  margin:0 0 100px 100px;
+}
+		
+#header {
+  background-color: rgb(68, 68, 68);
+  padding: 50px;
+  font-size: 2.5em;
+  margin-right: 6px;	
+  font-weight: bold;
+  color: white;
+        }
+#official-info {
+  background: rgb(255,255,255));
+  width: 90%;
+  height: 130px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+        </style>
+    </head>
+    <body text="white">
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <a href="index.html">Home</a>
+  <a href="insert_blog.html">Blog</a>
+  <a href="signup.html">Sign up and comment</a>
+  <a href="aboutme.html">About me</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NAVIGATION</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    <p id="header">ABOUT ME</p>
+	
+	
+	
+	<div id="official-info">
+    <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/243470646_3069572593261830_7274407238479292158_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GJXAXAX6tKgAX_DS5vi&_nc_ht=scontent.fmnl8-2.fna&oh=00_AT-4t8PR485G-jdOhSObGI04q4jHsp0_cylG4h5rCJTZ1g&oe=622A6EED" id="pic"
+	width="300"height="300" id="pic">
+	
+    <p class="highlight1">
+      Hello my name is Ryan Gabriel Candari and I am a computer science student from Asia Pacific College. I'm 20 years old.   
+	  I live in Makati City, Wilson street. August 18 2001 was my date of birth. My hobbies are playing, sleeping and watching random stuff in the internet.
+	  My goal is to graduate college and have a decent job that I like but before that I must get the required grades to graduate and to do that I must study hard.
+	  I have a tendency to be competitive especially in things that I love to do. Which is a good characteristic for me because I can do my best and hope to achieve the goal I want. 
+    </p>
+	<div id="links">
+    <h4>Education History</h4>
+        <ul>
+            <li><strong>Nursery to Elementary</strong>
+                <p class="highlight1">I studied at Francisco School of Makati during my younger years. This serves as my alma matter and have created a lot of memories in it.
+                <br>
+                <a href="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.18169-9/27858088_1896038100437844_4895341217403015227_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=OFXOSClfnPQAX84OXHu&_nc_ht=scontent.fmnl8-2.fna&oh=00_AT-JpGGBiBxnFZQgkVQ78DkfczLueByk-q3OOCmO4FCSBg&oe=624C6152">A memorable photo during my elementary years</a>
+                </p>
+            </li>
+            <li>
+                <strong>Junior Highschool</strong>
+				<p class="highlight1">This time I had to change schools because my previous school doesn't have a highschool in it. So I enrolled to Saint Mary's Academy Pasay.
+				I've created a lot of moments here and also friends that I would consider my true friends.
+                <br>
+                <a href="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.18169-9/29468854_2042772725979690_6948415889461989451_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=0debeb&_nc_ohc=QWGyv99HoBkAX8AmC9O&_nc_ht=scontent.fmnl9-3.fna&oh=00_AT_-oVwgrEVKK4r9QYLEHW_slqW5r5aUMoVtwQD7lm5ZrA&oe=624DA54A">A memorable photo during my Junior Highschool years</a>
+                </p>
+            </li>
+            <li>
+                <strong>Senior Highschool</strong>
+				<p class="highlight1">I decided to change schools to pursue a different career in a better oppurtunity. I've chosen Asia Pacific College because I think I could reach my 
+				maximmum potential once I study here. I do not regret, studying here gave me the best 2 years stretch of my life. 				
+				<br>
+                <a href="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.6435-9/52827990_2304420696443694_35130006392799232_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=lfB8TXmpIDMAX-FIdF9&_nc_ht=scontent.fmnl8-2.fna&oh=00_AT-HkIoobI5Ylywwofc-aiYZgbFq9g7yywQZM7uqIf2cZg&oe=624CC04B">A memorable photo during my Senior Highschool years</a>
+                </p>
+            </li>
+		</ul>
+	<div id="links">
+    <h3>My Socials</h3>
+      <p>Here are other ways to get to know me
+      <ul>
+         <li><a href="https://www.facebook.com/RyGaboCandari">Facebook</a></li>
+         <li><a href="https://twitter.com/gaboboboboboboo">Twitter</a></li>
+         <li><a href="https://my-learning.w3schools.com">W3schools</a></li>
+		 </p>
+      </ul>
+    </div>
+    
+
+
+    </body>
+</html>
